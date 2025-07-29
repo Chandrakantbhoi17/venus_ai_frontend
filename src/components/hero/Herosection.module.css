@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 40px;
+  height: auto; /* Allow height to adapt to content */
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+
+.heroSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.heroContent {
+  flex: 1;
+  min-width: 300px;
+}
+
+.heroContent h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+  margin-left: 30px;
+  font-family: "Fraunces", serif;
+  font-weight: 400;
+}
+
+.heroContent p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #333;
+  margin-left: 30px;
+  max-width: 600px;
+}
+
+.heroImage {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.heroImage img {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  border-radius: 12px;
+  margin-left: 0;
+}
+
+.getInTouchButton {
+  background-color: #4bbee4;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  margin-left: 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+}
+
+.getInTouchButton:active {
+  transform: scale(0.98);
+}
+
+/* =============================
+   📱 Responsive Media Queries
+============================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .heroContent h1 {
+    font-size: 44px;
+  }
+
+  .heroContent p {
+    font-size: 18px;
+  }
+
+  .getInTouchButton {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .heroSection {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .heroContent,
+  .heroImage {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .heroContent h1,
+  .heroContent p,
+  .getInTouchButton {
+    margin-left: 0;
+  }
+
+  .getInTouchButton {
+    margin-top: 20px;
+  }
+
+  .heroImage img {
+    max-width: 90%;
+  }
+}

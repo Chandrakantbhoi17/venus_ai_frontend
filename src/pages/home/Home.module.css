@@ -1,0 +1,552 @@
+/* Entire page container */
+
+@import url('https://fonts.googleapis.com/css2?family=Fjord+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjord+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjord+One&display=swap');
+
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+  font-weight: 650;
+}
+
+
+/* Existing container */
+.container {
+  display: flex;
+  height: 100vh;
+  padding-top: 80px; /* for fixed navbar */
+  background-color: white;
+}
+
+/* Left, Middle, Right Boxes remain unchanged */
+.leftBox,
+.rightBox {
+  flex: 1;
+  padding: 20px;
+}
+
+.middleBox {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.middleBox h2{
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  font-family: "Fjord One", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px;
+  padding: 20px;
+}
+
+.card {
+  width: 160px;
+  height: 160px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1.5px dotted #007bff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+  font-size: 32px;
+  color: #007bff;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  padding: 0 12px;
+}
+
+
+/* Responsive Additions */
+
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .card {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .card {
+    width: 120px;
+    height: 120px;
+  }
+
+  .middleBox h2 {
+    font-size: 2rem;
+  }
+
+  .icon {
+    font-size: 28px;
+  }
+
+  .title {
+    font-size: 9px;
+  }
+}
+
+
+
+/* CLIENTS SECTION */
+.clientsSection {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+  /* border-top: 1px solid #ddd; */
+}
+
+.clientsSection h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.clientsSection p {
+  font-size: 16px;
+  color: #666;
+}
+
+.highlight {
+  color: #007bff;
+  font-weight: bold;
+}
+
+
+
+/* How We Work Section */
+.howWeWorkSection {
+  padding: 4rem 1.5rem;
+  background-color: white;
+}
+
+.howWeWorkContainer {
+  max-width: 80rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.howWeWorkTitle {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+  color: #1f2937;
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.howWeWorkGrid {
+  display: grid;
+  gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .howWeWorkGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.howWeWorkCard {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  text-align: left;
+}
+
+.howWeWorkCard h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+.howWeWorkCard p {
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+
+/*n AI benifits*/
+
+.aiVisualheading {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #111;
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.aiVisualGrid {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.aiVisualCard {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+}
+
+.aiVisualCard:hover {
+  transform: translateY(-8px);
+}
+
+.cardImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 20px;
+}
+
+.aiVisualSection {
+  background: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* .aiVisualGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+} */
+
+
+.aiVisualCard h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #1b2a4e;
+}
+
+.aiVisualCard p {
+  font-size: 15px;
+  color: #444;
+}
+
+
+/* AI Section Styling */
+.aiSection {
+  background-color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.aiSection h2 {
+  font-size: 40px;
+  color: #222;
+  margin-bottom: 10px;
+   font-family: "Noto Serif Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.subheading {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.aiGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.aiCard {
+  background-color: white;
+  border-radius: 16px;
+  padding: 25px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.aiCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.aiCard h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #0b2447;
+}
+
+.aiCard ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.aiCard ul li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #444;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+
+
+/* === What We Offer Section === */
+.section {
+  padding: 4rem 1.5rem;
+  background-color: white;
+}
+
+.offer_container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heading{
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-family: "Fjord One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.offer_container h2{
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  font-family: "Fjord One", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.offer_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  justify-items: center;
+}
+
+@media (min-width: 768px) {
+  .offer_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+  color: #4f46e5; /* optional color tweak */
+}
+
+.offer_title {
+  /* font-size: 1.25rem; */
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+  font-size: 20px;
+  
+}
+
+.description {
+  font-size: 1rem;
+  color: #4b5563;
+  max-width: 400px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+
+
+
+
+.contactSection {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  padding: 40px 100px;
+  background-color: white;
+  /* gap: 40px; */
+}
+
+
+.contact_box{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.contactLeft {
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+
+  min-width: 300px;
+}
+
+.contactRight {
+
+  min-width: 300px;
+  display: flex;
+  justify-content: center; /* Keeps the image to the right */
+  align-items: center;
+  margin-bottom: 50px;
+  
+}
+
+.ContactImage {
+  max-width: 460px;
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); */
+}
+
+
+.contactHeading {
+  color: #0073c1;
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+  font-family: "Noto Serif Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 3rem;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.line {
+  width: 60px;
+  height: 4px;
+  background-color: #0073c1;
+  margin: 10px 0 30px;
+  border: none;
+}
+
+.contactItem {
+  margin-bottom: 25px;
+}
+
+.contactItem h4 {
+  color: #f57c00;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.contactItem p {
+  color: #333;
+  line-height: 1.5;
+  margin: 4px 0;
+}
+
+/* {Responsive contactus} */
+
+@media (max-width: 768px) {
+  .contact_box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contactRight {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .contactImage {
+    max-width: 180px; /* Smaller on mobile */
+  }
+}
+
+
+
+

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjord+One&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+.inquirySection {
+  padding: 60px 40px;
+  background: white;
+  text-align: center;
+}
+
+.heading {
+  font-size: 35px;
+  /* font-weight: 700; */
+  color: #111;
+  margin-bottom: 40px;
+  letter-spacing: 3px;
+  font-family: "Fjord One", serif;
+  font-weight: 500;
+  font-style: normal;
+  
+}
+
+.inquiryContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.leftPanel {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.location {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.location a {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+
+.image {
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.form {
+  flex: 1;
+  min-width: 320px;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form input,
+.form textarea {
+  padding: 14px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.8);
+  outline: none;
+}
+
+.form textarea {
+  height: 100px;
+  border-radius: 20px;
+  resize: none;
+}
+
+.form button {
+  background: linear-gradient(to right, #a065f0, #00bbf9);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 14px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.form button:hover {
+  opacity: 0.9;
+}
+
+.uploadInput {
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  font-size: 14px;
+}
+
