@@ -8,7 +8,7 @@ import AdminPanel from './components/panel/AdminPanel.jsx';
 import Layout from './layouts/Layout.jsx';
 import LoginPage from './pages/Login.jsx';
 import ProtectedRoute from './routes/ProtectedRoutes.jsx'; // Make sure the path is correct
-
+import  AIMLIntegration   from "./pages/ai_integration/AiIntegration.jsx"
 function App() {
   const [count, setCount] = useState(0);
 
@@ -24,6 +24,7 @@ function App() {
         <Route>
           <Route path="/login" element={<LoginPage />} />
         </Route>
+          <Route path="/ai-integration" element={< AIMLIntegration/>} />
 
         {/* Protected routes */}
         <Route

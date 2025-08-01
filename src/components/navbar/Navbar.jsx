@@ -3,7 +3,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from "./Navbar.module.css";
-
+import { Link } from 'react-router-dom';
 const Navbar = () => {
   const navigate = useNavigate();
 
@@ -42,7 +42,7 @@ const Navbar = () => {
                 Our Services
               </a>
               <ul className="dropdown-menu" aria-labelledby="servicesDropdown">
-                <li><a className="dropdown-item" href="#">AI / ML Integration </a></li>
+                <li><Link to={'/ai-integration'} className='dropdown-item'>AI / ML Integration</Link></li>
                 <li><a className="dropdown-item" href="#">Product Development</a></li>
                 <li><a className="dropdown-item" href="#">Mobile App Development</a></li>
                 <li><a className="dropdown-item" href="#">E-commerce Development</a></li>
@@ -65,10 +65,12 @@ const Navbar = () => {
                 Products
               </a>
               <ul className="dropdown-menu" aria-labelledby="productsDropdown">
-                <li><a className="dropdown-item" href="#">A</a></li>
-                <li><a className="dropdown-item" href="#">B</a></li>
-                <li><a className="dropdown-item" href="#">C</a></li>
-                <li><a className="dropdown-item" href="#">D</a></li>
+                <li><a className="dropdown-item" href="#">Venus OCR/Document handler</a></li>
+                <li><a className="dropdown-item" href="#">Venus Predict</a></li>
+                <li><a className="dropdown-item" href="#">Venus Miles Management</a></li>
+                <li><a className="dropdown-item" href="#">Venus Object Detection</a></li>
+                <li><a className="dropdown-item" href="#">Venus Genrative AI bot</a></li>
+                <li><a className="dropdown-item" href="#">Venus IOT Platform</a></li>
               </ul>
             </li>
 
